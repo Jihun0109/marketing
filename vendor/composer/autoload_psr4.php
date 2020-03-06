@@ -52,6 +52,7 @@ return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'League\\CommonMark\\' => array($vendorDir . '/league/commonmark/src'),
+    'Laravel\\Ui\\' => array($vendorDir . '/laravel/ui/src'),
     'Laravel\\Tinker\\' => array($vendorDir . '/laravel/tinker/src'),
     'Larapack\\VoyagerHooks\\' => array($vendorDir . '/larapack/voyager-hooks/src'),
     'Larapack\\Hooks\\' => array($vendorDir . '/larapack/hooks/src'),
