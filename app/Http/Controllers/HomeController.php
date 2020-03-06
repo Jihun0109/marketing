@@ -23,6 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+        return redirect(app()->getLocale());
+        //return view('home');
+    }
+
+    public function home()
+    {        
         return view('home');
     }
 }

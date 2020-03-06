@@ -80,8 +80,11 @@ return [
     |
     */
 
-    'locale' => 'en',
-
+    'locale' => 'ko',
+    'available_locales' => [
+        'en',
+        'ko'
+    ],
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -174,6 +177,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        Barryvdh\TranslationManager\ManagerServiceProvider::class,
 
     ],
 
