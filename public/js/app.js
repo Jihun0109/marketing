@@ -49525,7 +49525,58 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 
 var app = new Vue({
   el: '#app'
+}); // why it doesn't work on firefox?
+
+var card = $(".card3d");
+$(document).on("mousemove", function (e) {
+  var ax = -($(window).innerWidth() / 2 - e.pageX) / 20;
+  var ay = ($(window).innerHeight() / 2 - e.pageY) / 10;
+  card.attr("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
 });
+/* Please ❤ this if you like it! */
+
+(function ($) {
+  "use strict";
+
+  $(function () {
+    var header = $(".start-style");
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 10) {
+        header.removeClass('start-style').addClass("scroll-on");
+      } else {
+        header.removeClass("scroll-on").addClass('start-style');
+      }
+    });
+  }); //Animation
+
+  $(document).ready(function () {
+    $('body.hero-anime').removeClass('hero-anime');
+  }); //Menu On Hover
+
+  $('body').on('mouseenter mouseleave', '.nav-item', function (e) {
+    if ($(window).width() > 750) {
+      var _d = $(e.target).closest('.nav-item');
+
+      _d.addClass('show');
+
+      setTimeout(function () {
+        _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+      }, 1);
+    }
+  }); //Switch light/dark
+
+  $("#switch").on('click', function () {
+    if ($("body").hasClass("dark")) {
+      $("body").removeClass("dark");
+      $("#switch").removeClass("switched");
+    } else {
+      $("body").addClass("dark");
+      $("#switch").addClass("switched");
+    }
+  });
+})(jQuery);
 
 /***/ }),
 
@@ -49643,6 +49694,39 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/less/hover-effect.less":
+/*!******************************************!*\
+  !*** ./resources/less/hover-effect.less ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/less/rect-bubble.less":
+/*!*****************************************!*\
+  !*** ./resources/less/rect-bubble.less ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/less/shadow-label.less":
+/*!******************************************!*\
+  !*** ./resources/less/shadow-label.less ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -49655,13 +49739,16 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!*********************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/less/rect-bubble.less ./resources/less/hover-effect.less ./resources/less/shadow-label.less ./resources/sass/app.scss ***!
+  \*********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\xampp\htdocs\marketing\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! D:\xampp\htdocs\marketing\resources\less\rect-bubble.less */"./resources/less/rect-bubble.less");
+__webpack_require__(/*! D:\xampp\htdocs\marketing\resources\less\hover-effect.less */"./resources/less/hover-effect.less");
+__webpack_require__(/*! D:\xampp\htdocs\marketing\resources\less\shadow-label.less */"./resources/less/shadow-label.less");
 module.exports = __webpack_require__(/*! D:\xampp\htdocs\marketing\resources\sass\app.scss */"./resources/sass/app.scss");
 
 

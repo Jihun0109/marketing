@@ -32,4 +32,7 @@ Route::group([
         Auth::routes();
 
         Route::get('/', 'HomeController@home')->name('home');
+
+        Route::get('/email-list', 'EmailListController@home')->name('emaillist.home');
+        Route::get('/product/{prod_id}', 'EmailListController@product')->name('emaillist.product');
     });

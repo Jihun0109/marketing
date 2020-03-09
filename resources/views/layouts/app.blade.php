@@ -19,66 +19,58 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/rect-bubble.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/shadow-label.css') }}" rel="stylesheet">
 </head>
 
-<body>
+<body class="hero-anime">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="navigation-wrap bg-light start-header start-style">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-md navbar-light">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                            <a class="navbar-brand" href="{{route('home', app()->getLocale())}}" target="_blank"><img
+                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/logo.svg" alt=""></a>
 
-                    </ul>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ route('login', app()->getLocale()) }}">{{ trans('auth.Login') }}</a>
-                        </li>
-                        @if (Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="{{ route('register', app()->getLocale()) }}">{{ trans('auth.Register') }}</a>
-                        </li>
-                        @endif
-                        @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout', app()->getLocale()) }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout', app()->getLocale()) }}" method="POST"
-                                    style="display: none;">
-                                    @csrf
-                                </form>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                        <a class="nav-link" href="{{route('home', app()->getLocale())}}"
+                                            role="button">Home</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="{{route('emaillist.home', app()->getLocale())}}">Email
+                                            List</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                                            role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Website Development</a>
+                                            <a class="dropdown-item" href="#">Web Scraping</a>
+                                            <a class="dropdown-item"
+                                                href="{{route('emaillist.home', app()->getLocale())}}">Email List</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        @endguest
-                    </ul>
+
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </nav>
-
+        </div>
         <main class="py-4">
             @yield('content')
         </main>

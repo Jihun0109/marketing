@@ -1,4 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/rect-bubble.css": "/css/rect-bubble.css",
+    "/css/hover-effect.css": "/css/hover-effect.css",
+    "/css/shadow-label.css": "/css/shadow-label.css",
     "/css/app.css": "/css/app.css"
 }
