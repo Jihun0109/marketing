@@ -54,9 +54,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398600side-triple3.jpg"
-                                alt=""></a></div>
+                    <div class="left">
+                        <a href="https://www.google.com/" target="_blank" class="banner-effect">
+                            <div class="bottom">
+                                <div class="frame">
+                                    <h3>Etsy Buyers Email list</h3>
+                                    <button class="btn btn-dark">download now!</button>
+                                </div>
+                            </div>
+                            <img src="http://marketing.com//storage/products/March2020/ZiP6jJdMa2jdM19fRKF9.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-3 remove-padding">
                     <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img

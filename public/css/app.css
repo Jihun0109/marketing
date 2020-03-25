@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext);@import url(https://fonts.googleapis.com/css?family=Kreon:700|Monoton);@import url(https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext);@import url(https://fonts.googleapis.com/css?family=Kreon:700|Monoton);@import url(https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600);@import url(https://fonts.googleapis.com/css?family=Fugaz+One|Oxanium&display=swap);@charset "UTF-8";
 
 /*!
  * animate.css -https://daneden.github.io/animate.css/
@@ -15570,6 +15570,39 @@ ul.ribbon-badge li.tail:after {
 }
 
 .banner-effect:hover img {
+  transform: scale(1.1);
+}
+
+.banner-effect .bottom {
+  position: absolute;
+  left: 8%;
+  top: 60%;
+  right: 8%;
+  bottom: 20px;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 10;
+  transition: 0.3s ease-in;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.banner-effect .bottom .frame {
+  position: relative;
+  border: dashed 1px #aaa;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-family: "Fugaz One", cursive;
+}
+
+.frame button,
+.frame a {
+  font-family: "Oxanium", cursive;
+}
+
+.banner-effect:hover .bottom {
   transform: scale(1.1);
 }
 

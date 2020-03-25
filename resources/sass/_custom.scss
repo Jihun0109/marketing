@@ -384,6 +384,45 @@ $shadow: rgba($yellow,
     transform: scale(1.1);
 }
 
+.banner-effect .bottom {
+    position: absolute;
+    left: 8%;
+    top: 60%;
+    right: 8%;
+    bottom: 20px;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 10;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Oxanium&display=swap');
+.banner-effect .bottom .frame {
+    //background-color: black;
+    //border-style: dotted;
+    position: relative;
+    border: dashed 1px #aaa;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-family: 'Fugaz One', cursive;
+}
+
+.frame button,
+.frame a {
+    font-family: 'Oxanium', cursive;
+}
+
+.banner-effect:hover .bottom {
+    transform: scale(1.1);
+}
+
 @-webkit-keyframes circle {
     0% {
         opacity: 1;
