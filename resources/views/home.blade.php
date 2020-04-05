@@ -59,7 +59,7 @@
                             <div class="bottom">
                                 <div class="frame">
                                     <h3>Etsy Buyers Email list</h3>
-                                    <button class="btn btn-dark">download now!</button>
+                                    {{-- <button class="btn btn-dark">download now!</button> --}}
                                 </div>
                             </div>
                             <img src="http://marketing.com//storage/products/March2020/ZiP6jJdMa2jdM19fRKF9.jpg" alt="">

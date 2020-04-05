@@ -412,11 +412,18 @@ $shadow: rgba($yellow,
     text-align: center;
     color: black;
     font-family: 'Fugaz One', cursive;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .frame button,
 .frame a {
     font-family: 'Oxanium', cursive;
+}
+
+.frame h3 {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .banner-effect:hover .bottom {

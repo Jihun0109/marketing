@@ -8305,12 +8305,10 @@ input[type=button].btn-block {
 
 @media (min-width: 576px) {
   .card-columns {
-    -webkit-column-count: 3;
-       -moz-column-count: 3;
-            column-count: 3;
-    -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
-            column-gap: 1.25rem;
+    -moz-column-count: 3;
+         column-count: 3;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
   }
@@ -15595,11 +15593,18 @@ ul.ribbon-badge li.tail:after {
   text-align: center;
   color: black;
   font-family: "Fugaz One", cursive;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .frame button,
 .frame a {
   font-family: "Oxanium", cursive;
+}
+
+.frame h3 {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .banner-effect:hover .bottom {
