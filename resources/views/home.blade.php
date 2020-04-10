@@ -2,190 +2,118 @@
 
 @section('content')
 
-<div class="header">
-
-    <!--Content before waves-->
-    <div class="inner-header flex" style="overflow: hidden;">
-
-        <div class="d-flex flex-column pl-4">
-            <h1 class="row text-black sign"><span class="flicker">F</span>ree&nbsp;<span
-                    class="fast-flicker">E</span>mail&nbsp;<span class="flicker">L</span>is<span
-                    class="fast-flicker">t</span>
-            </h1>
-            <div class="d-flex justify-content-end">
-                <div class="row text-white align-self-right" style="animation: blink 1s infinite alternate;">For your
-                    marketing
+<header id="header-area" style="background: url({{ asset('img/header_back.jpg') }}) no-repeat;">
+    <div class="container">
+        <div class="row justify-content-sm-center header-title">
+            <div class="mt-4">
+                <div class="contents text-center">
+                    <h1 style="color:#f73f3f; margin-bottom:10px;">Marketing Resources</h1>
+                    <h3 style="padding: 5px; display: inline-block; background-color:#f73f3f">Free Email Lists</h3>
                 </div>
-
-                <div class="scanlines"></div>
             </div>
-
         </div>
     </div>
+</header>
+<section id="why">
+    <div class="container">
+        <div class="px-5">
+            <h3 class="text-center">Why email marketing?</h3>
+            <p>
 
-    <!--Waves Container-->
-    <div style="z-index: 10;">
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-            </g>
-        </svg>
-    </div>
-    <!--Waves end-->
-
-</div>
-<!--Header ends-->
-
-<!--Content starts-->
-<div class="container">
-    <div class="d-flex pt-5">
-        <div class="row w-100 justify-content-center">
-            <h1 class="text-effect3" data-heading="i">Popular</h1>
+                No marketing category has the longevity of email marketing. While some marketing trends come and go,
+                email
+                remains the most powerful channel available to the modern marketer.
+            </p>
         </div>
     </div>
-    <section class="banner-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left">
-                        <a href="https://www.google.com/" target="_blank" class="banner-effect">
-                            <div class="bottom">
-                                <div class="frame">
-                                    <h3>Etsy Buyers Email list</h3>
-                                    {{-- <button class="btn btn-dark">download now!</button> --}}
-                                </div>
-                            </div>
-                            <img src="http://marketing.com//storage/products/March2020/ZiP6jJdMa2jdM19fRKF9.jpg" alt="">
-                        </a>
+</section>
+<section id="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid w-100" src="{{asset('img/chart.png')}}" style="border: none;" alt="">
+            </div>
+            <div class="col-md-6" style="position: relative;">
+                <div class="frame" style="">
+                    <div>
+                        <h4 class="text-center">Grow your business</h4>
+                        <div>
+                            At its simplest, email marketing is a powerful communication tool
+                            to build relationships with customers. It gives you a chance to
+                            speak to a lot of people.</div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398579side-triple2.jpg"
-                                alt=""></a></div>
-                </div>
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398571side-triple1.jpg"
-                                alt=""></a></div>
-                </div>
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398571side-triple1.jpg"
-                                alt=""></a></div>
-                </div>
             </div>
-        </div>
-    </section>
-    <div class="d-flex pt-5">
-        <div class="row w-100 justify-content-center">
-            <h1 class="text-effect3" data-heading="i">Last Update</h1>
         </div>
     </div>
-    <section class="banner-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398600side-triple3.jpg"
-                                alt=""></a></div>
-                </div>
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398579side-triple2.jpg"
-                                alt=""></a></div>
-                </div>
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398571side-triple1.jpg"
-                                alt=""></a></div>
-                </div>
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398571side-triple1.jpg"
-                                alt=""></a></div>
-                </div>
-            </div>
+</section>
+<section id="">
+    <div class="container">
+        <div class="row justify-content-center mb-3">
+            <h3>You can <span style="color:#f73f3f">make</span> :</h3>
         </div>
-    </section>
-    <div class="d-flex pt-5">
-        <div class="row w-100 justify-content-center">
-            <h1 class="text-effect3" data-heading="i">Special Offer</h1>
+        <div class="row steps">
+            <div class="col-md-6 col-lg-3 py-3 step">
+                <img src="{{asset('img/traffic.png')}}" alt="" class="img-fluid w-100">
+                <h3 class="steps-text">
+                    Traffic to your
+                    service</h3>
+            </div>
+            <div class="col-md-6 col-lg-3 py-3 step">
+                <img src="{{asset('img/crowd.png')}}" alt="" class="img-fluid w-100">
+                <h3 class="steps-text">
+                    Much more leads</h3>
+            </div>
+            <div class="col-md-6 col-lg-3 py-3 step">
+                <img src="{{asset('img/cash.png')}}" alt="" class="img-fluid w-100">
+                <h3 class="steps-text">
+                    Sales than before</h3>
+            </div>
+            <div class="col-md-6 col-lg-3 py-3 step">
+                <img src="{{asset('img/money.png')}}" alt="" class="img-fluid w-100">
+                <h3 class="steps-text">
+                    Increazed revenue</h3>
+            </div>
         </div>
     </div>
-    <section class="banner-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398600side-triple3.jpg"
-                                alt=""></a></div>
-                </div>
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398579side-triple2.jpg"
-                                alt=""></a></div>
-                </div>
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398571side-triple1.jpg"
-                                alt=""></a></div>
-                </div>
-                <div class="col-md-6 col-lg-3 remove-padding">
-                    <div class="left"><a href="https://www.google.com/" target="_blank" class="banner-effect"><img
-                                src="https://geniusocean.com/demo/royalcommerce/assets/images/banners/1564398571side-triple1.jpg"
-                                alt=""></a></div>
-                </div>
-            </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3>with</h3>
         </div>
-    </section>
-    <div class="d-flex pt-5">
-        <div class="row w-100 justify-content-center">
-            <h1 class="text-effect3" data-heading="i">Collections</h1>
-        </div>
-    </div>
-    <div class="d-flex row fan-box">
-        <div class="fan-card mt-5 mt-md-2">
-            <div class="imgBx">
-                <img class="back-img"
-                    src="https://images.unsplash.com/photo-1532123675048-773bd75df1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                    alt="images">
-            </div>
-            <div class="details">
-                <h2>SomeOne Famous<br><span>Director</span></h2>
-            </div>
+        <div class="row justify-content-center mb-3">
+            <h3><span style="color:#f73f3f">FREE</span> email lists :</h3>
         </div>
 
-        <div class="fan-card mt-5 mt-md-2">
-            <div class="imgBx">
-                <img class="back-img"
-                    src="https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                    alt="images">
+        <div class="row text-center text-lg-left py-3">
+            <div class="col-md-6 col-lg-3">
+                <a href="#" class="d-block mb-4 h-100 banner-effect">
+                    {{-- <div class="ribbon  ribbon--yellow">Best!</div> --}}
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+                </a>
             </div>
-            <div class="details">
-                <h2>SomeOne Famous<br><span>Producer</span></h2>
+            <div class="col-md-6 col-lg-3">
+                <a href="#" class="d-block mb-4 h-100 banner-effect">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#" class="d-block mb-4 h-100 banner-effect">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <a href="#" class="d-block mb-4 h-100 banner-effect">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+                </a>
             </div>
         </div>
+</section>
 
-        <div class="fan-card mt-5 mt-md-2">
-            <div class="imgBx">
-                <img class="back-img"
-                    src="https://images.unsplash.com/photo-1548094878-84ced0f6896d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                    alt="images">
-            </div>
-            <div class="details">
-                <h2>SomeOne Famous<br><span>Actor</span></h2>
-            </div>
-        </div>
+<section>
+    <div class="container">
 
     </div>
-</div>
-<!--Content ends-->
+</section>
 @endsection

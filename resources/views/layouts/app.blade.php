@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Cache-Control" content="no-cache">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -23,7 +23,7 @@
     <link href="{{ asset('css/shadow-label.css') }}" rel="stylesheet">
 </head>
 
-<body class="hero-anime">
+<body class="hero-anime dark">
     <div id="app">
         <div class="navigation-wrap bg-light start-header start-style">
             <div class="container">
@@ -56,8 +56,7 @@
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">Website Development</a>
                                             <a class="dropdown-item" href="#">Web Scraping</a>
-                                            <a class="dropdown-item"
-                                                href="{{route('emaillist.home', app()->getLocale())}}">Email List</a>
+                                            <a class="dropdown-item" href="#">Email Templates</a>
                                         </div>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
