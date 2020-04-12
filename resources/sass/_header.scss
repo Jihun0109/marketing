@@ -783,7 +783,9 @@ section {
 
 .img-thumbnail {
     border: 0;
-    background-color: rgba($color: #ffffff, $alpha: 0);
+    background-color: rgba(255, 255, 255, 0);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 .steps h3 {

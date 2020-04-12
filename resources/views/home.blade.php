@@ -17,7 +17,7 @@
 <section id="why">
     <div class="container">
         <div class="px-5">
-            <h3 class="text-center">Why email marketing?</h3>
+            <h3 class="text-center">Why <span style="color:#f73f3f">email</span> marketing?</h3>
             <p>
 
                 No marketing category has the longevity of email marketing. While some marketing trends come and go,
@@ -36,7 +36,7 @@
             <div class="col-md-6" style="position: relative;">
                 <div class="frame" style="">
                     <div>
-                        <h4 class="text-center">Grow your business</h4>
+                        <h4 class="text-center"><span style="color:#f73f3f">Grow</span> your business</h4>
                         <div>
                             At its simplest, email marketing is a powerful communication tool
                             to build relationships with customers. It gives you a chance to
