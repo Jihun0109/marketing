@@ -42,11 +42,13 @@
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                    <li
+                                        class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ request()->segment(2) == "" ? 'active' : '' }}">
                                         <a class="nav-link" href="{{route('home', app()->getLocale())}}"
                                             role="button">Home</a>
                                     </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <li
+                                        class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ request()->segment(2) == "email-list" ? 'active' : '' }}">
                                         <a class="nav-link" href="{{route('emaillist.home', app()->getLocale())}}">Email
                                             List</a>
                                     </li>
@@ -78,11 +80,13 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <h6>About</h6>
-                        <p class="text-justify"><span style="color:#f73f3f">Idea2alive.com</span> is a small window
-                            between a development team and the
+                        <p class="text-justify"><a href="{{route('home', app()->getLocale())}}"><span
+                                    style="color:#f73f3f">Idea2alive.com</span></a> is a small window
+                            to connect a development team with the
                             world. We will share our ideas with you and also make your ideas to live with our software
                             development service. All of members are sensitive and passionate to new technical trends.
-                            The motto of this team is supreme quality and customer respect.</p>
+                            The team motto is supreme quality and customer respect. The slogan is "Let's bring ideas to
+                            reality." </p>
                     </div>
 
                     <div class="col-xs-6 col-md-3">
