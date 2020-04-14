@@ -31,8 +31,12 @@
                     <div class="col-12">
                         <nav class="navbar navbar-expand-md navbar-light">
 
-                            <a class="navbar-brand" href="{{route('home', app()->getLocale())}}" target="_blank"><img
-                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/logo.svg" alt=""></a>
+                            <a class="navbar-brand" href="{{route('home', app()->getLocale())}}" target="_blank">
+                                {{-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/logo.svg" alt=""> --}}
+                                <h2><span style="color:#aaa;">idea</span><span style="color:white;">2</span><span
+                                        style="color:#f73f3f;">alive</span>
+                                </h2>
+                            </a>
 
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -60,6 +64,10 @@
                                             <a class="dropdown-item" href="#">Web Scraping</a>
                                             <a class="dropdown-item" href="#">Email Templates</a>
                                         </div>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link"
+                                            href="http://codemissile.creatorLink.net/portfolio">Portfolio</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="#">Contact</a>
@@ -117,8 +125,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                            <a href="#">Scanfcode</a>.
+                        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                            <a href="http://codemissile.creatorLink.net">codemissile team</a>
                         </p>
                     </div>
 
