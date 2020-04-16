@@ -10,8 +10,6 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -132,16 +130,24 @@
 
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="github" href="https://github.com/Jihun0109"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li><a class="facebook" href="https://www.facebook.com/jihun.han.10420"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="https://twitter.com/hanjihun"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a class="dribbble" href="https://www.instagram.com/hanbeautisong/"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a class="linkedin" href="https://www.linkedin.com/in/hanjihun"><i
+                                        class="fab fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 
 </html>

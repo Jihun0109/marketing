@@ -31,9 +31,11 @@ const app = new Vue({
     el: '#app',
 });
 
-
 // why it doesn't work on firefox?
 var card = $(".card3d");
+
+window.AOS = require('aos');
+window.AOS.init();
 
 $(document).on("mousemove", function(e) {
     var ax = -($(window).innerWidth() / 2 - e.pageX) / 20;

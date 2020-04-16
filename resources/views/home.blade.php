@@ -29,7 +29,7 @@
 </section>
 <section id="">
     <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-up">
             <div class="col-md-6">
                 <img class="img-fluid w-100" src="{{asset('img/chart.png')}}" style="border: none;" alt="">
             </div>

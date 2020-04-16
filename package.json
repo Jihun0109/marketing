@@ -26,6 +26,8 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "animate.css": "^3.7.2"
+        "@fortawesome/fontawesome-free": "^5.13.0",
+        "animate.css": "^3.7.2",
+        "aos": "^2.3.4"
     }
 }
