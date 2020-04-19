@@ -20883,6 +20883,16 @@ section {
   -webkit-filter: grayscale(100%);
 }
 
+.img-thumbnail:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.thumbnail:hover::after {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
 .steps h3 {
   border-bottom: 5px solid #f73f3f;
   background-color: rgba(50, 50, 50, 0.8);

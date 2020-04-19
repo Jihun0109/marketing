@@ -85,29 +85,16 @@
         <div class="row justify-content-center mb-3">
             <h3><span style="color:#f73f3f">FREE</span> email lists :</h3>
         </div>
-
         <div class="row text-center text-lg-left py-3">
+            @foreach ($products as $product)
             <div class="col-md-6 col-lg-3">
-                <a href="#" class="d-block mb-4 h-100 banner-effect">
+                <a href="{{app()->getLocale()}}/product/{{$product->id}}" class="d-block mb-4 h-100 banner-effect">
                     {{-- <div class="ribbon  ribbon--yellow">Best!</div> --}}
-                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+                    <img class="img-fluid img-thumbnail" src="{{Voyager::image($product->thumb)}}"
+                        alt="{{$product->name}}">
                 </a>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="#" class="d-block mb-4 h-100 banner-effect">
-                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="#" class="d-block mb-4 h-100 banner-effect">
-                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <a href="#" class="d-block mb-4 h-100 banner-effect">
-                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
-                </a>
-            </div>
+            @endforeach
         </div>
 </section>
 

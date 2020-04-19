@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
 
 class HomeController extends Controller
 {
@@ -28,7 +29,8 @@ class HomeController extends Controller
     }
 
     public function home()
-    {        
-        return view('home');
+    {
+        $products = Product::whereIn('id', [1,2,3,4])->get();
+        return view('home', compact('products'));
     }
 }

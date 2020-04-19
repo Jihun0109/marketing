@@ -29,7 +29,7 @@
                     <div class="col-12">
                         <nav class="navbar navbar-expand-md navbar-light">
 
-                            <a class="navbar-brand" href="{{route('home', app()->getLocale())}}" target="_blank">
+                            <a class="navbar-brand" href="{{route('home', app()->getLocale())}}" target="_self">
                                 {{-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/logo.svg" alt=""> --}}
                                 <h2><span style="color:#aaa;">idea</span><span style="color:white;">2</span><span
                                         style="color:#f73f3f;">alive</span>
