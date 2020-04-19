@@ -15,7 +15,7 @@
     </div>
 </header>
 <section id="why">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <div class="px-5">
             <h3 class="text-center">Why <span style="color:#f73f3f">email</span> marketing?</h3>
             <p>

@@ -21371,6 +21371,10 @@ ul.ribbon-badge li.tail:after {
   left: 70px;
 }
 
+.card {
+  background-color: rgba(38, 38, 38, 0);
+}
+
 .card3d {
   pointer-events: none;
   transform: translateZ(0);

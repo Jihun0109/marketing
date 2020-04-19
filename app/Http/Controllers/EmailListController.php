@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use App\Product;
 
 class EmailListController extends Controller
 {
@@ -11,7 +13,9 @@ class EmailListController extends Controller
         return view('emaillist');
     }
     public function product(Request $request, $locale, $prod_id)
-    {        
-        return view('product-detail');
+    {
+        $product = Product::where('id', $prod_id)->first();
+        
+        return view('product-detail', compact('product'));
     }
 }

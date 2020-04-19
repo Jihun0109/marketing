@@ -130,8 +130,8 @@
 
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <ul class="social-icons">
-                            <li><a class="github" href="https://github.com/Jihun0109"><i class="fab fa-github"></i></a>
-                            </li>
+                            {{-- <li><a class="github" href="https://github.com/Jihun0109"><i class="fab fa-github"></i></a>
+                            </li> --}}
                             <li><a class="facebook" href="https://www.facebook.com/jihun.han.10420"><i
                                         class="fab fa-facebook-f"></i></a></li>
                             <li><a class="twitter" href="https://twitter.com/hanjihun"><i
