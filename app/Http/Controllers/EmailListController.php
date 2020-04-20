@@ -8,9 +8,10 @@ use App\Product;
 
 class EmailListController extends Controller
 {
-    public function home()
-    {        
-        return view('emaillist');
+    public function index()
+    {
+        $products = Product::all();
+        return view('emaillist', compact('products'));
     }
     public function product(Request $request, $locale, $prod_id)
     {

@@ -33,6 +33,7 @@ Route::group([
 
         Route::get('/', 'HomeController@home')->name('home');
 
-        Route::get('/email-list', 'EmailListController@home')->name('emaillist.home');
+        Route::get('/email-list', 'EmailListController@index')->name('emaillist.index');
         Route::get('/product/{prod_id}', 'EmailListController@product')->name('emaillist.product');
+        Route::get('/contact', 'ContactController@index')->name('contact');
     });

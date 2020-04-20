@@ -51,7 +51,8 @@
                                     </li>
                                     <li
                                         class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ request()->segment(2) == "email-list" ? 'active' : '' }}">
-                                        <a class="nav-link" href="{{route('emaillist.home', app()->getLocale())}}">Email
+                                        <a class="nav-link"
+                                            href="{{route('emaillist.index', app()->getLocale())}}">Email
                                             List</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
@@ -67,8 +68,9 @@
                                         <a class="nav-link"
                                             href="http://codemissile.creatorLink.net/portfolio">Portfolio</a>
                                     </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="#">Contact</a>
+                                    <li
+                                        class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ request()->segment(2) == "contact" ? 'active' : '' }}">
+                                        <a class="nav-link" href="{{route('contact', app()->getLocale())}}">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -95,14 +97,17 @@
                             reality." </p>
                     </div>
                     <div class="col-xs-6 col-md-3">
-                        <h6>Categories</h6>
+                        <h6>Services</h6>
                         <ul class="footer-links">
-                            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+                            <li><a href="{{route('emaillist.index', app()->getLocale())}}">Free Email list</a></li>
+                            <li><a href="#">Web Scraping</a></li>
+                            <li><a href="#">Email Templates</a></li>
+                            <li><a href="#">Website Development</a></li>
+                            <li><a href="http://codemissile.creatorlink.net/">More...</a></li>
+                        </ul>
+                        <h6>Contact</h6>
+                        <ul class="footer-links">
+                            <li><img src="{{asset('img/contact.png')}}" alt=""></li>
                         </ul>
                     </div>
 
