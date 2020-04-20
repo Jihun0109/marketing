@@ -19,11 +19,21 @@
         </div>
     </div>
     <div class="row">
-        <div class="d-none d-md-block col-md-4">
-            Image area
+        <div class="col-12 col-md-6">
+            <img class="img-fluid" src="{{asset('img/contact_bk.png')}}" alt="Contact to Free Email List Service">
         </div>
-        <div class="col-12 col-md-8">
-            contact form area
+        <div class="col-12 col-md-6 mt-5">
+            <form class="w-100 pl-0 pl-md-5" action="">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address <span class="main-color">*</span></label>
+                    <input type="email" class="form-control" placeholder="yourname@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Your message <span class="main-color">*</span></label>
+                    <textarea class="form-control" rows="4"
+                        placeholder="Kindly put your message here and we will reply to asap."></textarea>
+                </div>
+            </form>
         </div>
     </div>
 </div>
