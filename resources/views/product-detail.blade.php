@@ -6,7 +6,7 @@
 
 </header>
 <div class="container mt-5 pt-5">
-    <h1 class="font-weight-light text-center text-center mt-4 mb-0">{{$product->name}}</h1>
+    <h1 class="font-weight-light text-center text-center mt-4 mb-0 main-color">{{$product->name}}</h1>
 
     <hr class="mt-2 mb-5">
     <div class="row d-flex justify-content-center">

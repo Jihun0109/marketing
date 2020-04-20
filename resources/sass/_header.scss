@@ -230,6 +230,18 @@ body.hero-anime p {
     transition-delay: 1700ms;
 }
 
+a {
+    color: #f73f3f;
+}
+
+a:hover {
+    color: #777;
+}
+
+.main-color {
+    color: #f73f3f !important;
+}
+
 h1 span {
     display: inline-block;
     transition: all 300ms linear;
@@ -789,11 +801,6 @@ section {
 }
 
 .img-thumbnail:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-}
-
-.thumbnail:hover::after {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }

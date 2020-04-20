@@ -382,6 +382,8 @@ $shadow: rgba($yellow,
 
 .banner-effect:hover img {
     transform: scale(1.1);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
 }
 
 .banner-effect .bottom {
