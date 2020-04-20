@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <h6>About</h6>
-                        <p class="text-justify"><a href="{{route('home', app()->getLocale())}}"><span
+                        <p class="text-justify mr-md-5"><a href="{{route('home', app()->getLocale())}}"><span
                                     style="color:#f73f3f">Idea2alive.com</span></a> is a small window
                             to connect a development team with the
                             world. We will share our ideas with you and also make your ideas to live with our software
@@ -94,7 +94,6 @@
                             The team motto is supreme quality and customer respect. The slogan is "Let's bring ideas to
                             reality." </p>
                     </div>
-
                     <div class="col-xs-6 col-md-3">
                         <h6>Categories</h6>
                         <ul class="footer-links">
