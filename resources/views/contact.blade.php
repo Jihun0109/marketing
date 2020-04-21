@@ -14,9 +14,6 @@
         <div class="col-12">
             We want to cooperate with you together for both of us.
         </div>
-        <div class="col-12">
-            Kindly put your message here and we will reply to asap.
-        </div>
     </div>
     <div class="row">
         <div class="col-12 col-md-6">

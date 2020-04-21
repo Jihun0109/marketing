@@ -55,12 +55,15 @@
                                             href="{{route('emaillist.index', app()->getLocale())}}">Email
                                             List</a>
                                     </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <li
+                                        class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ request()->segment(2) == "scraping" ? 'active' : '' }}">
                                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
                                             role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">Website Development</a>
-                                            <a class="dropdown-item" href="#">Web Scraping</a>
+                                            <a class="dropdown-item"
+                                                href="{{route('scraping', app()->getLocale())}}">Web
+                                                Scraping</a>
                                             <a class="dropdown-item" href="#">Email Templates</a>
                                         </div>
                                     </li>
