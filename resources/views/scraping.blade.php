@@ -37,7 +37,7 @@
                             <div class="timeline-content">
                                 <h3 class="title">Scrape</h3>
                                 <p class="description">
-                                    We code, debug and run the code. In order to make sure that all the data is correct,
+                                    Coding, debugging and running. In order to make sure that all the data is correct,
                                     we give the client some data as a demo.
                                 </p>
                             </div>
@@ -48,7 +48,7 @@
                                 <h3 class="title">Payment</h3>
                                 <p class="description">
                                     The client verifies that the demo data is correct and makes the promised payment. If
-                                    the data is not correct, you may be asked to correct it.
+                                    the data is not correct, you can ask to correct it.
                                 </p>
                             </div>
                         </div>

@@ -36,5 +36,6 @@ Route::group([
         Route::get('/email-list', 'EmailListController@index')->name('emaillist.index');
         Route::get('/product/{prod_id}', 'EmailListController@product')->name('emaillist.product');
         Route::get('/contact', 'ContactController@index')->name('contact');
+        Route::post('/contact/send-msg', 'ContactController@message')->name('message');
         Route::get('/scraping', 'ServiceController@scraping')->name('scraping');
     });

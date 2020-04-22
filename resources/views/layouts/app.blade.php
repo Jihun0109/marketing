@@ -111,6 +111,7 @@
                         <h6>Contact</h6>
                         <ul class="footer-links">
                             <li><img src="{{asset('img/contact.png')}}" alt=""></li>
+                            <li>skype: beautisong</li>
                         </ul>
                     </div>
 
