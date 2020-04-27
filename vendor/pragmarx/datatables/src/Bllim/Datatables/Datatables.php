@@ -19,6 +19,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Facades\Request;
 
 class Datatables
 {
@@ -64,7 +65,8 @@ class Datatables
     public function __construct()
     {
 
-        $this->setData($this->processData(Input::get()));
+        #$this->setData($this->processData(Input::get()));
+        $this->setData($this->processData(Request::input()));
 
         return $this;
     }

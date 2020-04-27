@@ -181,7 +181,7 @@ return [
      *     sudo apt-get purge php5-geoip
      *
      */
-    'log_geoip' => true,
+    'log_geoip' => false,
 
     /*
      * Do you wish to log the user agent?
@@ -226,7 +226,7 @@ return [
     /*
      * Log errors and exceptions?
      */
-    'log_exceptions' => false,
+    'log_exceptions' => true,
 
     /*
      * A cookie may be created on your visitor device, so you can have information
@@ -327,7 +327,7 @@ return [
     /*
      * Enable the Stats Panel?
      */
-    'stats_panel_enabled' => false,
+    'stats_panel_enabled' => true,
 
     /*
      * Stats Panel routes before filter
