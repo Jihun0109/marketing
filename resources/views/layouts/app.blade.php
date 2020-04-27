@@ -146,8 +146,8 @@
                                         class="fab fa-twitter"></i></a></li>
                             <li><a class="dribbble" href="https://www.instagram.com/hanbeautisong/"><i
                                         class="fab fa-instagram"></i></a></li>
-                            <li><a class="linkedin" href="https://www.linkedin.com/in/hanjihun"><i
-                                        class="fab fa-linkedin"></i></a></li>
+                            {{-- <li><a class="linkedin" href="https://www.linkedin.com/in/hanjihun"><i
+                                        class="fab fa-linkedin"></i></a></li> --}}
                         </ul>
                     </div>
                 </div>
