@@ -27,4 +27,7 @@ return array(
     '801c31d8ed748cfa537fa45402288c95' => $vendorDir . '/psy/psysh/src/functions.php',
     'b6ec61354e97f32c0ae683041c78392a' => $vendorDir . '/scrivo/highlight.php/HighlightUtilities/functions.php',
     'ed962a97bd972bc82007176b647d4e36' => $vendorDir . '/facade/ignition/src/helpers.php',
+    'a7cee959d5f14eb7484e7f8e7182e03d' => $vendorDir . '/geoip/geoip/src/geoip.inc',
+    '8cf74b4cf02ad0591c257dcfb7edbc8d' => $vendorDir . '/geoip/geoip/src/geoipcity.inc',
+    'd114bd5194e69687495c9150ff6be780' => $vendorDir . '/geoip/geoip/src/timezone.php',
 );
