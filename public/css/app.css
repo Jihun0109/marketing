@@ -20909,6 +20909,10 @@ section {
   background-color: rgba(50, 50, 50, 0.8);
 }
 
+.para-margin {
+  margin-top: 100px;
+}
+
 @media (max-width: 1199px) {
   section {
     margin-bottom: 50px;
@@ -21394,6 +21398,23 @@ ul.ribbon-badge li.tail:after {
 
 .card {
   background-color: rgba(38, 38, 38, 0);
+}
+
+.width-auto {
+  width: auto;
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.carousel-indicators li {
+  border: none;
+  background: #ccc;
+}
+
+.carousel-indicators li.active {
+  background: #f73f3f;
 }
 
 .card3d {
