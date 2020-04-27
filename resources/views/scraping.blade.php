@@ -106,7 +106,7 @@
         </div>
     </div>
     <div class="row mb-3 mb-sm-5 justify-content-center  para-margin">
-        <h3 class="text-center" style="border-bottom: 5px solid #f73f3f;">Our clients say:</h3>
+        <h3 class="text-center" style="border-bottom: 5px solid #f73f3f;">Our clients say like:</h3>
     </div>
     <div class="row">
         <section class="pb-5" style="margin-bottom: 0 !important;">
@@ -213,7 +213,7 @@
     <div class="my-5"></div>
     <div class="row justify-content-center">We opened a channel at &nbsp;&nbsp;<a
             href="https://www.fiverr.com/kanggyong/do-data-mining-data-extraction-web-scrape-email"
-            target="_blank"><span style="color:#f73f3f">Idea2alive.com</span></div>
+            target="_blank"><span style="color:#f73f3f">Fiverr.com</span></div>
     <div class="para-margin"></div>
 </div>
 @endsection

@@ -17,6 +17,17 @@
         </div>
     </div>
 </header>
+<section id="idea">
+    <div class="container para-margin" data-aos="fade-up">
+        <div class="px-5">
+            <h3 class="text-center main-color" data-aos="zoom-in-down">No matter how new the idea is, it becomes useless
+                if it is not known to people. <span class="text-white">Drive quality traffic to your ideas.</span></h3>
+            <p>
+
+            </p>
+        </div>
+    </div>
+</section>
 <section id="why">
     <div class="container" data-aos="fade-up">
         <div class="px-5">
