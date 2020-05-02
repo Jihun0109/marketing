@@ -10,4 +10,9 @@ class ServiceController extends Controller
     {
         return view('scraping');
     }
+
+    public function templates()
+    {
+        return view('coming-soon');
+    }
 }

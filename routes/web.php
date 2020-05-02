@@ -38,4 +38,5 @@ Route::group([
         Route::get('/contact', 'ContactController@index')->name('contact');
         Route::post('/contact/send-msg', 'ContactController@message')->name('message');
         Route::get('/scraping', 'ServiceController@scraping')->name('scraping');
+        Route::get('/templates', 'ServiceController@templates')->name('templates');
     });
