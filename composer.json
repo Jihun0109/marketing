@@ -10,6 +10,7 @@
     "require": {
         "php": "^7.2",
         "barryvdh/laravel-translation-manager": "^0.5.8",
+        "butschster/meta-tags": "^1.6",
         "fideloper/proxy": "^4.0",
         "geoip/geoip": "~1.14",
         "laravel/framework": "^6.2",

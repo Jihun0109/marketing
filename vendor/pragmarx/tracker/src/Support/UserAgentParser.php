@@ -22,7 +22,7 @@ class UserAgentParser
             $userAgent = $_SERVER['HTTP_USER_AGENT'];
         }
 
-        $this->parser = Parser::create()->parse($userAgent);
+        $this->parser = Parser::create()->parse($userAgent??"Default");
 
         $this->userAgent = $this->parser->ua;
 
