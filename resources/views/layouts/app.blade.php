@@ -108,21 +108,14 @@
                             {{-- <li><a href="#">Website Development</a></li> --}}
                             <li><a href="http://codemissile.creatorlink.net/">More...</a></li>
                         </ul>
+
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
                         <h6>Contact</h6>
                         <ul class="footer-links">
                             <li><img src="{{asset('img/contact.png')}}" alt=""></li>
                             <li>skype: beautisong</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-6 col-md-3">
-                        <h6>Quick Links</h6>
-                        <ul class="footer-links">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Contribute</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Sitemap</a></li>
                         </ul>
                     </div>
                 </div>
