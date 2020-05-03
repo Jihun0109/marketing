@@ -180,6 +180,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Barryvdh\TranslationManager\ManagerServiceProvider::class,
+        App\Providers\MetaTagsServiceProvider::class,
 
     ],
 

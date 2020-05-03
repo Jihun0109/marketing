@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Butschster\Head\Facades\Meta;
 use Illuminate\Http\Request;
 use App\Message;
 

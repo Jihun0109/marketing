@@ -8,9 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="canonical" href="{{ url()->current() }}" />
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
+    {!! Meta::toHtml() !!}
     {{-- canonical link here --}}
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -51,7 +49,7 @@
                                             role="button">Home</a>
                                     </li>
                                     <li
-                                        class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ request()->segment(2) == "email-list" ? 'active' : '' }}">
+                                        class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ (request()->segment(2) == "email-list" || request()->segment(2) == "product") ? 'active' : '' }}">
                                         <a class="nav-link"
                                             href="{{route('emaillist.index', app()->getLocale())}}">Email
                                             List</a>
@@ -61,7 +59,7 @@
                                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
                                             role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Website Development</a>
+                                            {{-- <a class="dropdown-item" href="#">Website Development</a> --}}
                                             <a class="dropdown-item"
                                                 href="{{route('scraping', app()->getLocale())}}">Web
                                                 Scraping</a>
@@ -107,7 +105,7 @@
                             <li><a href="{{route('emaillist.index', app()->getLocale())}}">Free Email list</a></li>
                             <li><a href="{{route('scraping', app()->getLocale())}}">Web Scraping</a></li>
                             <li><a href="{{route('templates', app()->getLocale())}}">Email Templates</a></li>
-                            <li><a href="#">Website Development</a></li>
+                            {{-- <li><a href="#">Website Development</a></li> --}}
                             <li><a href="http://codemissile.creatorlink.net/">More...</a></li>
                         </ul>
                         <h6>Contact</h6>
