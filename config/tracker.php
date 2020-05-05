@@ -34,6 +34,7 @@ return [
      */
     'do_not_track_routes' => [
         'tracker.stats.*',
+        'admin.*',
     ],
 
     /*
@@ -41,6 +42,8 @@ return [
      */
     'do_not_track_paths' => [
         'api/*',
+        'admin/*',
+        'stats/*'
     ],
 
     /*
@@ -57,6 +60,7 @@ return [
      */
     'do_not_track_ips' => [
         //'127.0.0.0/24', /// range 127.0.0.1 - 127.0.0.255
+        '222.112.215.0/24'
     ],
 
     /*
@@ -226,7 +230,7 @@ return [
     /*
      * Log errors and exceptions?
      */
-    'log_exceptions' => true,
+    'log_exceptions' => false,
 
     /*
      * A cookie may be created on your visitor device, so you can have information
