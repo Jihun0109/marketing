@@ -103,7 +103,7 @@
         <div class="row text-center text-lg-left py-3">
             @foreach ($products as $product)
             <div class="col-md-6 col-lg-3">
-                <a href="{{app()->getLocale()}}/product/{{$product->id}}" class="d-block mb-4 h-100 banner-effect">
+                <a href="{{app()->getLocale()}}/product/{{$product->sku}}" class="d-block mb-4 h-100 banner-effect">
                     {{-- <div class="ribbon  ribbon--yellow">Best!</div> --}}
                     <img class="img-fluid img-thumbnail" src="{{Voyager::image($product->thumb)}}"
                         alt="{{$product->name}}">

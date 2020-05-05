@@ -22,9 +22,13 @@ class EmailListController extends Controller
         $products = Product::all();
         return view('emaillist', compact('products'));
     }
-    public function product(Request $request, $locale, $prod_id)
+    public function product(Request $request, $locale, $sku)
     {
-        $product = Product::where('id', $prod_id)->first();
+        // Count up visits
+        $product = Product::where('sku', $sku)->first();
+        $product->visits ++;
+        $product->save();
+
         Meta::prependTitle('Free email list')
                 ->setDescription($product->short)
                 ->setKeywords(['Marketing resources','free email list','Etsy customers'])
@@ -35,5 +39,15 @@ class EmailListController extends Controller
                 
         
         return view('product-detail', compact('product'));
+    }
+
+    public function download(Request $request, $locale, $sku)
+    {
+        // Count up downloads
+        $product = Product::where('sku', $sku)->first();
+        $product->downloads ++;
+        $product->save();
+
+        return redirect($product->outlink);
     }
 }

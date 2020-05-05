@@ -34,9 +34,11 @@ Route::group([
         Route::get('/', 'HomeController@home')->name('home');
 
         Route::get('/email-list', 'EmailListController@index')->name('emaillist.index');
-        Route::get('/product/{prod_id}', 'EmailListController@product')->name('emaillist.product');
+        Route::get('/product/{sku}', 'EmailListController@product')->name('emaillist.product');
         Route::get('/contact', 'ContactController@index')->name('contact');
         Route::post('/contact/send-msg', 'ContactController@message')->name('message');
         Route::get('/scraping', 'ServiceController@scraping')->name('scraping');
         Route::get('/templates', 'ServiceController@templates')->name('templates');
+
+        Route::get('/product/download/{sku}', 'EmailListController@download')->name('emaillist.download');
     });

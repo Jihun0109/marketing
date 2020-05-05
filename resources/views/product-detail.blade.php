@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="d-flex justify-content-center mt-md-5">
-        <a class="btn btn-dark" target="_blank" href="{{$product->outlink}}">Download</a>
+        <a class="btn btn-dark" target="_blank" href="download/{{$product->sku}}">Download</a>
     </div>
 </div>
 @endsection
