@@ -18,6 +18,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/rect-bubble.css') }}" rel="stylesheet">
     <link href="{{ asset('css/shadow-label.css') }}" rel="stylesheet">
+
+    <script data-ad-client="ca-pub-2138478831301398" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body class="hero-anime dark">
