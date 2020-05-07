@@ -10,7 +10,8 @@
                     <h1 style="color:#f73f3f; margin-bottom:10px;" data-aos="fade-right" data-aos-offset="300"
                         data-aos-easing="ease-in-sine" data-aos-duration="1000">Marketing Resources</h1>
                     <h3 style="padding: 5px; display: inline-block; background-color:#f73f3f" data-aos="fade-left"
-                        data-aos-offset="500" data-aos-duration="1500">Free Email Lists
+                        data-aos-offset="500" data-aos-duration="1500"><a style="color:white !important;"
+                            href="{{route('emaillist.index', app()->getLocale())}}">Free Email Lists</a>
                     </h3>
                 </div>
             </div>

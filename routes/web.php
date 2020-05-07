@@ -41,4 +41,7 @@ Route::group([
         Route::get('/templates', 'ServiceController@templates')->name('templates');
 
         Route::get('/product/download/{sku}', 'EmailListController@download')->name('emaillist.download');
+
+        Route::get('/blog', 'BlogController@index')->name('blog.index');
+        Route::get('/articles/{slug}', 'BlogController@article')->name('blog.article');
     });
