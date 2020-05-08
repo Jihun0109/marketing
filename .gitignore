@@ -12,3 +12,6 @@ npm-debug.log
 yarn-error.log
 composer.lock
 .psd
+
+/public/js/app.js
+/public/css/app.css
