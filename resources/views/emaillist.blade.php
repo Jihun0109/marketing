@@ -14,7 +14,7 @@
     <div class="row text-center text-lg-left">
         @foreach ($products as $product)
         <div class="col-lg-3 col-md-4 col-6">
-            <a href="product/{{$product->id}}" class="d-block mb-4 h-100 banner-effect">
+            <a href="product/{{$product->sku}}" class="d-block mb-4 h-100 banner-effect">
                 {{-- <div class="ribbon  ribbon--yellow">Best!</div> --}}
                 <img class="img-fluid img-thumbnail" src="{{Voyager::image($product->thumb)}}" alt="{{$product->name}}">
             </a>
