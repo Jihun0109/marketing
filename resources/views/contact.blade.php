@@ -12,6 +12,9 @@
 
     <div class="row mb-3 mb-sm-5">
         <div class="col-12">
+            <input type="hidden" name="IL_IN_ARTICLE">
+        </div>
+        <div class="col-12">
             If you have any question message us here or send email to <img src="{{asset('img/gmail.png')}}" alt="">.
         </div>
     </div>
