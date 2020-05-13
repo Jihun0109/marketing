@@ -20,10 +20,10 @@
     <link href="{{ asset('css/shadow-label.css') }}" rel="stylesheet">
 
     <script type="text/javascript">
-var infolinks_pid = 3227001;
+        var infolinks_pid = 3227001;
 var infolinks_wsid = 1;
-</script>
-<script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+    </script>
+    <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
 </head>
 
 <body class="hero-anime dark">
@@ -73,9 +73,9 @@ var infolinks_wsid = 1;
                                                 href="{{route('templates', app()->getLocale())}}">Email Templates</a>
                                         </div>
                                     </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link"
-                                            href="http://codemissile.creatorLink.net/portfolio">Portfolio</a>
+                                    <li
+                                        class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ (request()->segment(2) == "blog" || request()->segment(2) == "articles") ? 'active' : '' }}">
+                                        <a class="nav-link" href="{{route('blog.index', app()->getLocale())}}">Blog</a>
                                     </li>
                                     <li
                                         class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 {{ request()->segment(2) == "contact" ? 'active' : '' }}">

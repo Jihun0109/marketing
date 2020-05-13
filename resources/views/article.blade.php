@@ -12,20 +12,19 @@
             <article class="post">
                 <header>
                     <h1 itemprop="name headline">{{$post->title}}</h1>
-                    <div>
-                        <i class="fal fa-tag"></i> Article
-                    </div>
-                    <hr class="custom">
-                    <div class="mb-3">
-                        Posted <time datetime="2018-06-12T00:00:00+00:00" itemprop="datePublished">Jun 12, 2018</time>
+
+                    <div class="mt-5">
+                        <i class="fas fa-align-justify"></i>
+                        Posted <time datetime="2018-06-12T00:00:00+00:00"
+                            itemprop="datePublished">{{$post->created_at}}</time>
                         by <span itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span
-                                itemprop="name">David
-                                Miller</span></span>
+                                itemprop="name">admin</span></span>
                     </div>
                 </header>
                 <div itemprop="articleBody">
-                    <p><img src="{{Voyager::image($post->image)}}" class="img-fluid rounded">
+                    <p><img src="{{Voyager::image($post->image)}}" class="img-fluid rounded" alt="{{$post->seo_title}}">
                     </p>
+                    <br>
                     {!!$post->body!!}
                 </div>
             </article>
